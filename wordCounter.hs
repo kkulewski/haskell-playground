@@ -1,10 +1,10 @@
-splitLine :: [Char] -> [[Char]]
+splitLine :: String -> [String]
 splitLine line = words line
 
-countWords :: [Char] -> Int
+countWords :: String -> Int
 countWords line = length (splitLine line)
 
-getWordCount :: [Char] -> [Char]
+getWordCount :: String -> String
 getWordCount input = show (countWords input)
 
 main = interact getWordCount
