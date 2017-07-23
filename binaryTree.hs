@@ -33,3 +33,18 @@ altTree1 =
         AltNode 5 
             (Just (AltNode 3 Nothing Nothing)) 
             (Just (AltNode 7 Nothing Nothing))
+            
+            
+altTree2 = 
+        (AltNode "P" 
+            (Just (AltNode "LC"
+                    (Just (AltNode "LLGC" Nothing Nothing)) 
+                    (Just (AltNode "RLGC" Nothing Nothing))
+                  )
+            ) 
+            (Just (AltNode "RC" 
+                    (Nothing) 
+                    (Nothing)
+                  )
+            )
+        )
