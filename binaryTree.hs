@@ -28,3 +28,8 @@ tree2 =
             )
         )
     )
+    
+altTree1 = 
+        AltNode 5 
+            (Just (AltNode 3 Nothing Nothing)) 
+            (Just (AltNode 7 Nothing Nothing))
