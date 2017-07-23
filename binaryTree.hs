@@ -2,6 +2,8 @@ data Tree x = Node x (Tree x) (Tree x)
             | Empty
             deriving (Show)
 
+data AltTree x = AltNode x (Maybe (AltTree x)) (Maybe (AltTree x))
+                 deriving (Show)
 
 tree1 = 
     Node "Parent" 
