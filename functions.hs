@@ -23,3 +23,7 @@ getIntMaybe' :: Maybe' Integer -> Integer
 getIntMaybe' x = case x of
     Nothing' -> 0
     Just' value -> value
+
+printMaybe' x = case x of
+    Nothing' -> "Nothing is here"
+    Just' value -> "There is value: " ++ (show value)
