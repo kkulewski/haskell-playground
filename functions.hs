@@ -10,3 +10,11 @@ greet = do
     putStrLn "What is your name?"  
     name <- getLine  
     putStrLn ("Hello " ++ name ++ "!") 
+    
+    
+data Maybe' a = Just' a
+            | Nothing'
+            deriving (Show)
+        
+x = Just' 5
+y = Nothing'
