@@ -18,3 +18,8 @@ data Maybe' a = Just' a
         
 x = Just' 5
 y = Nothing'
+
+getIntMaybe' :: Maybe' Integer -> Integer
+getIntMaybe' x = case x of
+    Nothing' -> 0
+    Just' value -> value
