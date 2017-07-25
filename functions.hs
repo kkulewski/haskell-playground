@@ -27,3 +27,6 @@ getIntMaybe' x = case x of
 printMaybe' x = case x of
     Nothing' -> "Nothing is here"
     Just' value -> "There is value: " ++ (show value)
+
+
+doubleList xs = [ x * 2 | x <- xs]
