@@ -31,4 +31,4 @@ printMaybe' x = case x of
 
 doubleList xs = [ x * 2 | x <- xs]
 
-length' xs = sum [ 1 | x <- xs]
+length' xs = sum [ 1 | _ <- xs]
