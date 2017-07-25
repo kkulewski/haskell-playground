@@ -32,3 +32,5 @@ printMaybe' x = case x of
 doubleList xs = [ x * 2 | x <- xs]
 
 length' xs = sum [ 1 | _ <- xs]
+
+removeEven xs = [ x | x <- xs, (mod x 2) /= 0]
