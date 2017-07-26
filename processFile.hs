@@ -10,4 +10,7 @@ processFile function = do
         [input, output] -> applyFunction function input output
         _ -> putStrLn "Error - two args expected."
 
+addQuotationMark [] = []
+addQuotationMark (x:xs) = "\"" ++ x ++ "\" " ++ (addQuotationMark xs)
+        
 main = processFile id
