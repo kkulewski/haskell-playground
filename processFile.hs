@@ -9,3 +9,5 @@ processFile function = do
     case args of
         [input, output] -> applyFunction function input output
         _ -> putStrLn "Error - two args expected."
+
+main = processFile id
