@@ -12,5 +12,7 @@ processFile function = do
 
 addQuotationMark [] = []
 addQuotationMark (x:xs) = "\"" ++ x ++ "\" " ++ (addQuotationMark xs)
+
+quotify text = addQuotationMark (words text)
         
-main = processFile id
+main = processFile quotify
