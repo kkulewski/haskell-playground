@@ -37,3 +37,9 @@ removeEven xs = [ x | x <- xs, (mod x 2) /= 0]
 
 threeArgsFunc :: Int -> Int -> Int -> Int
 threeArgsFunc x y z = x + y + z
+
+twoArgsFunc :: Int -> Int -> Int
+twoArgsFunc x y = (threeArgsFunc 1) x y
+
+oneArgFunc :: Int -> Int
+oneArgFunc x = (threeArgsFunc 1 2) x
